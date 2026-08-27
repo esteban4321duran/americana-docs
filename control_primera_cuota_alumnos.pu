@@ -1,0 +1,36 @@
+@startuml
+title control de primera cuota alumnos
+|Vicedirectora|
+start
+
+:Ya pasó un mes desde
+que comenzaron las clases;
+
+:obtener alumnos que solo pagaron su inscripción;
+:esperar 1 día;
+
+note right
+Lista de alumnos que 
+solo pagaron inscripción
+end note
+
+
+if(lista vacía?) then (sí)
+	stop
+else (no)
+endif
+
+|Secretario|
+repeat
+:Avisar a alumno que
+falta pagar la primera cuota;
+
+note left
+Lista de alumnos que 
+solo pagaron inscripción
+end note
+repeat while (falta otro alumno en la lista) is (sí) not (no)
+
+
+stop
+@enduml
