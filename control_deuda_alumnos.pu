@@ -1,0 +1,31 @@
+@startuml
+title control de deudas de alumnos
+|Vicedirectora|
+start
+:Ya pasaron dos semamas
+desde que comenzaron las clases;
+:obtener alumnos que solo pagaron su inscripción;
+
+note right
+Lista de alumnos que 
+solo pagaron inscripción
+end note
+
+if(lista vacía?) then (sí)
+	stop
+else (no)
+endif
+
+|Secretario|
+repeat
+:Avisar alumno que
+falta pagar la cuota;
+note left
+Lista de alumnos que 
+solo pagaron inscripción
+end note
+repeat while (falta otro alumno en la lista) is (sí) not (no)
+
+
+stop
+@enduml

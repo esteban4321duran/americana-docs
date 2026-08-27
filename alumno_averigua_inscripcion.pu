@@ -1,4 +1,5 @@
 @startuml
+title Alumno averigua sobre inscripción
 start
 :Alumno solicita información
 sobre los cursos;
@@ -6,7 +7,7 @@ if (ya se dictaron 4 clases?) then (sí)
 	:Explicar a Alumno que ya no puede
 	inscribirse e invitarlo a inscribirse
 	en el próximo cuatrimestre;
-	end
+	stop
 else (todavía no)
 endif
 
@@ -16,5 +17,5 @@ if (Ya se dictaron 3 clases?) then (sí)
 else (todavía no)
 endif
 :Enviar información sobre cursos;
-end
+stop
 @enduml
