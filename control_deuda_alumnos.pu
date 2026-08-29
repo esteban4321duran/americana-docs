@@ -2,13 +2,40 @@
 title control de deudas de alumnos
 |Vicedirectora|
 start
-:Ya pasaron dos semamas
+:Ya pasaron dos meses
 desde que comenzaron las clases;
-:obtener alumnos que solo pagaron su inscripción;
+:buscar alumnos que pagaron parcial o que no pagaron nada;
 
 note right
-Lista de alumnos que 
-solo pagaron inscripción
+Lista de alumnos que pagaron
+parcial o no pagaron nada
+end note
+
+if(lista vacía?) then (sí)
+	stop
+else (no)
+endif
+
+|Secretario|
+repeat
+:Avisar a alumno que
+falta pagar la cuota;
+note left
+Lista de alumnos que pagaron
+parcial o no pagaron nada
+end note
+repeat while (falta otro alumno en la lista) is (sí) not (no)
+
+|Vicedirectora|
+:Ya pasaron 3 meses
+desde que comenzaron las clases;
+:buscar alumnos que pagaron parcial 
+(solo pagaron algunas cuotas) o 
+no pagaron nada;
+
+note right
+Lista de alumnos que pagaron
+parcial o no pagaron nada
 end note
 
 if(lista vacía?) then (sí)
@@ -21,11 +48,10 @@ repeat
 :Avisar alumno que
 falta pagar la cuota;
 note left
-Lista de alumnos que 
-solo pagaron inscripción
+Lista de alumnos que pagaron
+parcial o no pagaron nada
 end note
 repeat while (falta otro alumno en la lista) is (sí) not (no)
-
 
 stop
 @enduml
