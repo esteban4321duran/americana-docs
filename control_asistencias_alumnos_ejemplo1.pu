@@ -16,4 +16,4 @@ Project starts 2026-07-08
 [cuota septiembre] starts at [cuota agosto]'s end
 [cuota octubre] starts at [cuota septiembre]'s end
 [cuota noviembre] starts at [cuota octubre]'s end
-@endgantt
+@endgantt 
